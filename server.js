@@ -11,10 +11,8 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var routes = require("./routes/apiRoutes.js")(app);
+require("./routes/apiRoutes.js")(app);
 require("./routes/htmlRoutes.js")(app);
-
-app.use(routes);
 
 app.listen(PORT, function() {
   console.log(" ");
