@@ -1,8 +1,8 @@
 var express = require("express");
-var path = require("path");
 var gradient = require('gradient-string');
-var http = require('http');
 // var fs = require("fs");
+const apiRoutes = require("./routes/apiRoutes.js");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 var PORT = process.env.PORT || 8080;
 
@@ -12,8 +12,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./routes/apiRoutes.js")(app);
-require("./routes/htmlRoutes")(app);
+app.use("/api", apiRoutes);
+app.use("/", htmlRoutes);
 
 app.listen(PORT, function() {
   console.log(" ");
