@@ -4,11 +4,11 @@
 
 ## General Info
 
-LIVE LINK: https://mirandor.github.io/notetaker/
+LIVE LINK: https://notetaker-darthmirandor.herokuapp.com/
 
 ## Quick Start
 
-1. Open the live link [here](https://mirandor.github.io/notetaker/)
+1. Open the live link [here](https://notetaker-darthmirandor.herokuapp.com/)
 1. Click the 'Get Started' button
 1. Enter a note title and text and save the note
 1. Review saved notes or delete saved notes as needed
